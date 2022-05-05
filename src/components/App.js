@@ -13,7 +13,7 @@ class App extends React.Component {
       pageNumber: 0,
       scrollAmount: 0
     }
-    this.isAngleClicked = this.pageNumberIncrement.bind(this);
+    this.pageNumberIncrement = this.pageNumberIncrement.bind(this);
   }
 
   pageNumberIncrement() {
