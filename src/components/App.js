@@ -3,7 +3,6 @@ import Div100vh from 'react-div-100vh';
 import Header from './Header';
 import Top from './Top';
 import AngleDown from './AngleDown';
-import ScrollDetector from './ScrollDetector';
 import '../css/app.css';
 
 class App extends React.Component {
@@ -11,7 +10,6 @@ class App extends React.Component {
     super(props);
     this.state = {
       pageNumber: 0,
-      scrollAmount: 0
     }
     this.pageNumberIncrement = this.pageNumberIncrement.bind(this);
   }
@@ -21,7 +19,7 @@ class App extends React.Component {
       return (
         {pageNumber: prevState.pageNumber + 1}
       );
-    });
+    })
   }
 
   handleHeaderVisibility() {
@@ -32,16 +30,16 @@ class App extends React.Component {
     }
   }
 
-  handleMainPage() {
-    if (this.state.pageNumber === 0) {
+  handleMainPage(pageNumber) {
+    if (pageNumber === 0) {
       return (
         <Top />
       );
-    } else if (this.state.pageNumber === 1) {
+    } else if (pageNumber === 1) {
 
-    } else if (this.state.pageNumber === 2) {
+    } else if (pageNumber === 2) {
 
-    } else if (this.state.pageNumber === 3) {
+    } else if (pageNumber === 3) {
 
     }
   }
@@ -49,27 +47,16 @@ class App extends React.Component {
   handleAngleVisibility() {
     if (this.state.pageNumber !== 3) {
       return (
-        <AngleDown isAngleClicked = {this.pageNumberIncrement}/>
+        <AngleDown isAngleClicked = {this.pageNumberIncrement} />
       );
-    }
-  }
- 
-  handleDetectMouceScroll() {
-    if (this.state.scrollAmount > 0) {
-      this.setState((prevStete) => {
-        return (
-          {pageNumber: prevStete.pageNumber + 1}
-        )
-      });
     }
   }
 
   render() {
     return (
       <Div100vh>
-        <ScrollDetector />
         { this.handleHeaderVisibility() }
-        { this.handleMainPage() }
+        { this.handleMainPage(this.state.pageNumber) }
         { this.handleAngleVisibility() }
       </Div100vh>
     );
