@@ -1,0 +1,19 @@
+header {
+  /* border: solid; */
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  padding: 3vw 11vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /*temp*/
+  /* display: none; */
+}
+
+.header_top {
+  /* border: solid; */
+  display: inline-block;
+  font-size: 3vw;
+}
