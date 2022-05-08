@@ -1,0 +1,7 @@
+.icon-container {
+  height: calc(71vh - 8rem);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap:30rem;
+}

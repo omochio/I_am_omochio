@@ -1,0 +1,7 @@
+.aboutme_text {
+  max-height: calc(71vh - 8rem);
+  overflow: auto;
+  max-width: 90vw;
+  line-height: 1;
+  font-size: 7rem;
+}

@@ -1,25 +1,24 @@
 .top_content {
   /* border: solid; */
   padding: 5vh 5vw 0 5vw;
-  pointer-events: none;
 }
 
 .top_iam {
   /* border: solid; */
-  font-size: 20vw;
+  font-size: 37rem;
   line-height: 1;
   float: left;
 }
 
 .top_icon {
   border-radius: 50%;
-  width: 40vw;
+  width: 75rem;
   float: right;
 }
 
 .top_name {
   /* border: solid; */
-  font-size: 7vw;
+  font-size: 13rem;
   margin-left: 0.5vw;
   line-height: 1;
   float: left;

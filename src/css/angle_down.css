@@ -1,6 +1,7 @@
 .angle_img {
   /* border: solid; */
   position: absolute;
-  top: 82vh;
-  left: calc(50vw - 427px / 2);
+  top: 90vh;
+  left: calc(50vw - 20rem / 2);
+  width: 20rem;
 }

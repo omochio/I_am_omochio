@@ -4,16 +4,10 @@ header {
   top: 0;
   left: 0;
   right: 0;
-  padding: 3vw 11vh;
+  height: 15vh;
+  padding: 0 5vw;
   display: flex;
-  justify-content: space-between;
   align-items: center;
-  /*temp*/
+  justify-content: right;
   /* display: none; */
-}
-
-.header_top {
-  /* border: solid; */
-  display: inline-block;
-  font-size: 3vw;
 }
