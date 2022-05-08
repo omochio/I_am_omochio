@@ -10,8 +10,8 @@ class Links extends React.Component {
     return(
       <div className='icon-container'>
         <IconContext.Provider value={{ size: '20rem'}}>
-          <FaTwitter />
-          <FaGithub />
+          <a style={{color: 'black'}} href='https://twitter.com/omochio_dev'><FaTwitter /></a>
+          <a style={{color: 'black'}} href= 'https://github.com/omochio'><FaGithub /></a>
         </IconContext.Provider>
       </div>
     );
