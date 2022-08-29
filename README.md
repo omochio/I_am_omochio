@@ -1,2 +1,2 @@
 # I_am_omochio
-<h1>React練習</h1>
+<p>React練習</br>PCのみ対応</p>
